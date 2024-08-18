@@ -1,0 +1,22 @@
+project Word Analytics
+34.to record the entry of word use an onChange event 
+to remove the wrong spell underline use " spellcheck = "False"
+and Placeholder for text in the box
+
+35. 
+to change the form from uncontrolled to controlled we would useState hook and introduce "value " set to the initiall value 		
+
+36. to show warning make a new component and then use useState hook to track that warning by default set warnings to "false " then setWarning(true)
+
+37. to make the component resuable pass the props to the component and then recieve it 
+
+43. to lift up state move the the things to the parent component like in this case the useState [ text, setText] is moved to container from the "Textarea" component to be
+received into the "Stats" component 
+
+44. for number of words use .trim() to remove any spaces,.split(/\s+/) converts that into an array and .filter(word => word !== "") and then
+	the filter will filter out the words that are spaces it meanns that will not be counted
+45. to clean out the props store that in one object and then pass that object as a prop even you can declare the variable inside that object 
+	after that you don't need to declare that varibles outside the object
+
+47. if you are usign constants in your porject later it would b hard to find out where did you use those constants so better is make a separate 
+	file for constants with " JS" extension and write the variabe name in upper case and simply export not export default
